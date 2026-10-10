@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b1020;
+  color: #e5ebff;
+}
+
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: linear-gradient(135deg, #121a2f, #1a2141);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.status-dot {
+  color: #7ef0a4;
+  font-weight: 700;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.chat-box {
+  flex: 1;
+  padding: 20px;
+  background: #111827;
+  border-radius: 12px;
+  overflow-y: auto;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.message {
+  max-width: 75%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.message.user {
+  margin-left: auto;
+  background: #2d6cdf;
+}
+
+.message.assistant {
+  margin-right: auto;
+  background: #1f2937;
+}
+
+.input-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: #0f172a;
+  color: white;
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #3e82ff, #6f7cff);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
